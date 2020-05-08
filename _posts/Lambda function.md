@@ -1,4 +1,7 @@
-Automate your infrastructure using Lambda function
+---
+layout: post
+title: Automate your infrastructure using Lambda function
+---
 
 
 AWS lambda is is an event-driven, serverless architecture that allows developers to create and configure a small function AWS (Amazon Web Services) console and execute the code without the need to provision physical or virtual servers and paying only for the resources used during the execution. The code automatically manages the computing resources required by that code.
