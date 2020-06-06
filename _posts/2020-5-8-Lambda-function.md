@@ -107,4 +107,5 @@ For this tutorial, we will use the sample event data provided by AWS:
 5. Run the Lambda function a few times to gather some metrics that you can view in the next step.
 6. Upon successful execution, view results in the console. Choose Monitoring. 
 This page shows graphs for the metrics that Lambda sends to CloudWatch.
-https://miro.medium.com/max/1400/1*Ix2leHr2vnWP32h7EHao3w.png
+![alt text](https://miro.medium.com/max/1400/1*Ix2leHr2vnWP32h7EHao3w.png "Cloud Watch")
+
