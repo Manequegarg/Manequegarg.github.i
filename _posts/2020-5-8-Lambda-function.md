@@ -97,11 +97,14 @@ Once you have built or configured your codes, press save on the bottom to move t
 Invoke the Lambda function
 The final step is to build a trigger which will intiate the function.
 Trigger can be configured in a response to an event, such as a change in a DynamoDB table, a new file uploaded to S3 or a similar AWS event. You can also configure the Lambda function to respond to requests to AWS API Gateway, or based on a timer triggered by AWS Cloudwatch, using Alexa or using on-demand SDK from Amazon.
+
 For this tutorial, we will use the sample event data provided by AWS:
-In the upper right corner of console, choose Test.
-In the Configure test event page, choose Create new test event and in Event template, leave the default Hello World option. Enter an Event name and note the following sample event template:
+1. In the upper right corner of console, choose Test.
+2. In the Configure test event page, choose Create new test event and in Event template, leave the default Hello World option. Enter an Event name and note the following sample event template:
 { "key3": "value3", "key2": "value2", "key1": "value1" }
 3. Choose Create and then choose Test. Each user can create up to 10 test events per function. Those test events are not available to other users.
 4. AWS Lambda executes your function on your behalf. The handler in your Lambda function receives and then processes the sample event.
 5. Run the Lambda function a few times to gather some metrics that you can view in the next step.
-6. Upon successful execution, view results in the console. Choose Monitoring. This page shows graphs for the metrics that Lambda sends to CloudWatch.
+6. Upon successful execution, view results in the console. Choose Monitoring. 
+This page shows graphs for the metrics that Lambda sends to CloudWatch.
+https://miro.medium.com/max/1400/1*Ix2leHr2vnWP32h7EHao3w.png
