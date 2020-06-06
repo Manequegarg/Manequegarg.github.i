@@ -8,6 +8,7 @@ AWS Lambda is an event-driven, serverless architecture that allows developers to
 
 Symbol of AWS Lambda
 Usually, Lambda code and dependencies can be wrapped in a Terraform deployment package to fully automate the whole infrastructure in order to build a cloud agnostic IaC. For the purposes of this tutorial, we will manually deploy a Lambda function in an AWS console.
+
 Setting up a Lambda function consists of three steps -
 Provide IAM permission
 To run a Lambda function, we need to assign an execution role and IAM policy to the function so that it has enough permissions to access and interact with the targeted AWS services and resources.
