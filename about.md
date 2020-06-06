@@ -4,11 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+This website is used for data science topics
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+alt text
+
+Next blog on Python for calling an API is coming soon
 
 ### Contact me
 
