@@ -10,6 +10,7 @@ Symbol of AWS Lambda
 Usually, Lambda code and dependencies can be wrapped in a Terraform deployment package to fully automate the whole infrastructure in order to build a cloud agnostic IaC. For the purposes of this tutorial, we will manually deploy a Lambda function in an AWS console.
 
 Setting up a Lambda function consists of three steps -
+
 Provide IAM permission
 To run a Lambda function, we need to assign an execution role and IAM policy to the function so that it has enough permissions to access and interact with the targeted AWS services and resources.
 Following are the steps to build the IAM policy:
@@ -89,12 +90,13 @@ def lambda_handler(event, context):
 ec2 = boto3.client(‘ec2’, region_name=region)
 ec2.stop_instances(InstanceIds=instances)
 print ‘stoped your instances: ‘ + str(instances)
-3. Use AWS Serverless Application Repository
 
-source: https://aws.amazon.com/serverless/serverlessrepo/
+3. Use AWS Serverless Application Repository
 AWS has a great repository of already built serverless applications which were published by independent programmers, companies and their partners.
 It contains many common use cases, and the platform is open to public to enrich the repository. The codes are available free of cost in order to encourage the re-usablity and encourage new users to opt for AWS services.
 Once you have built or configured your codes, press save on the bottom to move to the last step.
+source: https://aws.amazon.com/serverless/serverlessrepo/
+
 Invoke the Lambda function
 The final step is to build a trigger which will intiate the function.
 Trigger can be configured in a response to an event, such as a change in a DynamoDB table, a new file uploaded to S3 or a similar AWS event. You can also configure the Lambda function to respond to requests to AWS API Gateway, or based on a timer triggered by AWS Cloudwatch, using Alexa or using on-demand SDK from Amazon.
